@@ -3,9 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Ethan</title>
+  <link rel="stylesheet" href="gtneoe.css">
+</head>
+<style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(45deg, #ff6b6b, #5f27cd, #48dbfb);
+      background-size: 600% 600%;
+      animation: gradientShift 10s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+<canvas id="confetti"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+  document.body.addEventListener("click", () => {
+    confetti();
+  });
+</script>
+
 </head>
 <body>
-  <img src="me-800-by-800.JPG" alt="My Picture" style="display:block; margin:auto; width:800px;">
+  <img src="me.png" alt="My Picture" style="display:block; margin:auto; width:800px;">
+  <h2 id="clock"></h2>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    document.getElementById("clock").textContent =
+      now.toLocaleTimeString();
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
   <h1>Getting To Know Each Other</h1>
   <h2>Ethan Fisher’s Introductions Website</h2>
   <p></p><a href="mailto:ethangfisher@lewisu.edu">Lewis Email</a></p>
