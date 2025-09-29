@@ -5,6 +5,7 @@
   <title>Ethan</title>
   <link rel="stylesheet" href="gtneoe.css">
 </head>
+<script src="gtneoe.js"></script>
 <style>
     body {
       height: 100vh;
@@ -19,18 +20,15 @@
       100% {background-position: 0% 50%;}
     }
   </style>
-<canvas id="confetti"></canvas>
+  <canvas id="confetti"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
   document.body.addEventListener("click", () => {
     confetti();
   });
 </script>
-
-</head>
-<body>
-  <img src="me.png" alt="My Picture" style="display:block; margin:auto; width:800px;">
-  <h2 id="clock"></h2>
+<img src="me.png" alt="My Picture" style="display:block; margin:auto; width:800px;">
+<h2 id="clock"></h2>
 
 <script>
   function updateClock() {
