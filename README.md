@@ -1,2 +1,3 @@
 # gtneoe
-Credit ChatGPT
+Credit ChatGPT:
+Used ChatGPT for the enhanced upgrades on webpage
